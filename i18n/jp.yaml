@@ -1,8 +1,20 @@
 toggleMenu:
-    other: メニューを開く・閉じる
+    other: Toggle Menu
 
 darkMode:
-    other: ダークモード
+    other: Dark Mode
+
+list:
+    page:
+        one: "{{ .Count }} page"
+        other: "{{ .Count }} pages"
+
+    section:
+        other: Section
+
+    subsection:
+        one: Subsection
+        other: Subsections
 
 article:
     back:
@@ -18,7 +30,8 @@ article:
         other: 最終更新
 
     readingTime:
-        other: "読了時間: {{ .Count }}分"
+        one: "{{ .Count }} minute read"
+        other: "{{ .Count }} minute read"
 
 notFound:
     title:
@@ -29,25 +42,25 @@ notFound:
 widget:
     archives:
         title:
-            other: アーカイブ
+            other: Archives
 
         more:
-            other: さらに見る
+            other: More
 
     tagCloud:
         title:
-            other: タグ
+            other: Tags
 
     categoriesCloud:
         title:
-            other: カテゴリ
+            other: Categories
 
 search:
     title:
-        other: 検索
+        other: Search
 
     placeholder:
-        other: 入力...
+        other: Type something...
 
     resultTitle:
         other: "#PAGES_COUNT 件 （#TIME_SECONDS 秒）"
@@ -57,4 +70,4 @@ footer:
         other: Built with {{ .Generator }}
 
     designedBy:
-        other: テーマ {{ .Theme }} は {{ .DesignedBy }} によって設計されています。
+        other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
